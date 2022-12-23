@@ -1,0 +1,28 @@
+<div class="header">
+    <script>
+     function  getD1(){
+         var date=new Date();
+         var d1=date.toLocaleString();
+         document.getElementById("datetime").innerHTML =d1; 
+     }
+ 
+     setInterval("getD1();",1000);
+ 
+</script>
+    <div class="logo fl">
+      <i>智慧农业后台</i>
+      <i id="datetime" onload = getD1()>   <i id="datetime"></i>    </i>
+    </div>
+    <div class="info">
+        <div class="profile dropdown fr">
+            <span class="btn dropdown-toggle" data-toggle="dropdown">
+				{{username && username}}
+				<span class="caret"></span>
+            </span>
+            <ul class="dropdown-menu">
+                <li><a href="user-edit">个人资料</a></li>
+                <li><a href="/admin/logout">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

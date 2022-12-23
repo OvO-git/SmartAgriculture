@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="/admin/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/css/base.css">
+</head>
+
+<body>
+    <div class="login-body">
+        <div class="login-container">
+            <h4 class="title"> 智慧农业</h4>
+            <div class="login">
+                <form action="/admin/login" method="post" id="loginForm">
+                    <div class="form-group">
+                        <label>邮件</label>
+                        <input name="email" type="email" class="form-control" placeholder="请输入邮件地址">
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input name="password" type="password" class="form-control" placeholder="请输入密码">
+                    </div>
+                    <button type="submit" class="btn btn-primary">登录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/admin/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/admin/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/admin/js/common.js"></script>
+    <script src="/admin/js/main.js"></script>
+    <script type="text/javascript">
+        $('#loginForm').on('submit', function () {
+            var result = serializeToJson($(this))
+            console.log(result)
+            if (result.email.trim().length == 0) {
+                alert('请输入邮件地址');
+                return false;
+            }
+            if (result.password.trim().length == 0) {
+                alert('请输入密码')
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("\n %c Smart Agriculture %c by 一杯冰美式 | DJDJDDJ","color:#fff;background:#409EFF;padding:5px 0;","color:#eee;background:#444;padding:5px 10px;");
