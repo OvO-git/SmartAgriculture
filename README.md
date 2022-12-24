@@ -4,8 +4,6 @@
 
 ![main.png](https://github.com/OvO-git/SmartAgriculture/blob/main/image/main.png?raw=true)
 
-
-
 ## 功能介绍
 
 本智慧农业管理系统，管理员或子账号可以登陆后台可以实现对加湿器、温度计、日光灯、排风扇等设备增添管理以及状态控制并监控运行天数等。
